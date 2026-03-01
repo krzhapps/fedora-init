@@ -10,5 +10,6 @@ bash "$SCRIPT_DIR/Software/git.sh"
 bash "$SCRIPT_DIR/Software/chrome.sh"
 bash "$SCRIPT_DIR/Software/alacritty.sh"
 bash "$SCRIPT_DIR/Software/shortcuts.sh"
+bash "$SCRIPT_DIR/Software/fedora.sh"
 
 echo "==> Setup complete."
