@@ -12,5 +12,6 @@ bash "$SCRIPT_DIR/Software/alacritty.sh"
 bash "$SCRIPT_DIR/Software/shortcuts.sh"
 bash "$SCRIPT_DIR/Software/fedora.sh"
 bash "$SCRIPT_DIR/Software/gh.sh"
+bash "$SCRIPT_DIR/Software/neovim.sh"
 
 echo "==> Setup complete."
