@@ -21,7 +21,7 @@ gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom1/" \
   name "Open Chrome"
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom1/" \
-  command "google-chrome"
+  command "google-chrome --start-maximized"
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom1/" \
   binding "<Super>b"
 
