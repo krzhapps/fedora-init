@@ -11,9 +11,10 @@ italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 size   = 9
 
 [window]
-padding.x   = 14
-padding.y   = 14
-decorations = "None"
+padding.x    = 14
+padding.y    = 14
+decorations  = "None"
+startup_mode = "Fullscreen"
 
 [keyboard]
 bindings = [
