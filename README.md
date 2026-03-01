@@ -1,6 +1,6 @@
 # Setup
 
-Fedora Linux system setup automation. Provisions a fresh machine by installing and configuring software automatically.
+Fedora Linux system setup automation. Provisions a fresh machine by installing and configuring software automatically. Tested only on Fedora Workstation 43. Feel free to use a starter and modify to your desires.
 
 ## Usage
 
