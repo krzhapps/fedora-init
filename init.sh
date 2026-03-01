@@ -9,5 +9,6 @@ bash "$SCRIPT_DIR/Software/tailscale.sh"
 bash "$SCRIPT_DIR/Software/git.sh"
 bash "$SCRIPT_DIR/Software/chrome.sh"
 bash "$SCRIPT_DIR/Software/alacritty.sh"
+bash "$SCRIPT_DIR/Software/shortcuts.sh"
 
 echo "==> Setup complete."
