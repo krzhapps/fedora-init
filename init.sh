@@ -15,5 +15,6 @@ bash "$SCRIPT_DIR/Software/gh.sh"
 bash "$SCRIPT_DIR/Software/neovim.sh"
 bash "$SCRIPT_DIR/Software/terraform.sh"
 bash "$SCRIPT_DIR/Software/docker.sh"
+bash "$SCRIPT_DIR/Software/obsidian.sh"
 
 echo "==> Setup complete."
