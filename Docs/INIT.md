@@ -9,6 +9,7 @@ The main entry point for system setup. Run this script to provision the machine.
    - `Software/tailscale.sh` — installs Tailscale
    - `Software/git.sh` — configures global Git settings
    - `Software/chrome.sh` — installs Google Chrome
+   - `Software/alacritty.sh` — installs Alacritty and deploys its config
 
 ## Usage
 
