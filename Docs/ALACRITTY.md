@@ -29,3 +29,6 @@ Run directly or via `init.sh`:
 ```bash
 bash ~/Setup/Software/alacritty.sh
 ```
+
+## Post-install
+If you make change to the `alacritty.toml` use `cp ../Configs/alacritty.toml ~/.config/alacritty/` to sync the changes
