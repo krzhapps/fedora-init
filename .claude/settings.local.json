@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(rpm:*)"
+      "Bash(rpm:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:learn.omacom.io)"
     ]
   }
 }
