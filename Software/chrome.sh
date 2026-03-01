@@ -3,11 +3,7 @@ set -euo pipefail
 
 echo "==> Installing Google Chrome..."
 
-# Add the official Google Chrome repository
-sudo dnf config-manager addrepo \
-    --from-repofile=https://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome.repo \
-    --overwrite
-
-sudo dnf install -y google-chrome-stable
+# Install directly from the official RPM — this also registers the Chrome repo for future updates
+sudo dnf install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
 echo "==> Google Chrome installed."
