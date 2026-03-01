@@ -6,7 +6,9 @@
       "WebFetch(domain:github.com)",
       "WebSearch",
       "WebFetch(domain:api.github.com)",
-      "WebFetch(domain:learn.omacom.io)"
+      "WebFetch(domain:learn.omacom.io)",
+      "Bash(chmod +x:*)",
+      "Bash(bash:*)"
     ]
   }
 }
