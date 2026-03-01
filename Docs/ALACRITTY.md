@@ -17,6 +17,7 @@ Installs and configures the Alacritty terminal emulator, styled after Omarchy.
 | Decorations | None (borderless) |
 | `$TERM` | `xterm-256color` |
 | OSC 52 clipboard | CopyPaste |
+| Shell | `tmux new-session -A -D -s main` |
 | Copy keybind | `Ctrl+Insert` |
 | Paste keybind | `Shift+Insert` |
 | Color scheme | Gruvbox |
