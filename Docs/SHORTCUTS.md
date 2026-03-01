@@ -10,6 +10,7 @@ Configures GNOME custom keybindings via `gsettings`.
 |-----------|---------------|-----------------|
 | SUPER + T | Open Terminal | `alacritty`     |
 | SUPER + B | Open Chrome   | `google-chrome` |
+| SUPER + O | Open Obsidian   | `xdotool set_desktop 3 & flatpak run md.obsidian.Obsidian` |
 
 ### Window Manager Keybindings
 

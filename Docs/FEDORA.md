@@ -37,4 +37,8 @@ Valid range: 1–36.
 
 ```bash
 gsettings set org.gnome.mutter dynamic-workspaces true
+
+## Installing `xdotool` for easy window management
+
+xdotool is usefull for selecting workspaces for specific apps
 ```
