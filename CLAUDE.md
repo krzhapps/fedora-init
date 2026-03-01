@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Purpose
 
-This is a Fedora Linux system setup automation repository. It provisions a fresh machine by installing and configuring: Tailscale, Git, Google Chrome, and Alacritty.
+This is a Fedora Linux system setup automation repository. It provisions a fresh machine by installing and configuring software automatically
 
 ## Running Setup
 
@@ -17,6 +17,7 @@ bash ~/Setup/Software/tailscale.sh
 bash ~/Setup/Software/git.sh
 bash ~/Setup/Software/chrome.sh
 bash ~/Setup/Software/alacritty.sh
+...
 ```
 
 ## Architecture
