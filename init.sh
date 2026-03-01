@@ -13,5 +13,7 @@ bash "$SCRIPT_DIR/Software/shortcuts.sh"
 bash "$SCRIPT_DIR/Software/fedora.sh"
 bash "$SCRIPT_DIR/Software/gh.sh"
 bash "$SCRIPT_DIR/Software/neovim.sh"
+bash "$SCRIPT_DIR/Software/terraform.sh"
+bash "$SCRIPT_DIR/Software/docker.sh"
 
 echo "==> Setup complete."
