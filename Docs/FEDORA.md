@@ -1,5 +1,8 @@
-# Fedora GNOME Configuration
+# Fedora Configuration
+## Directory setup
+Remove Public and Desktop directories and create Projects/Github
 
+## Configuring GNOME
 Configures GNOME workspace behaviour via `gsettings`.
 
 ## Settings
