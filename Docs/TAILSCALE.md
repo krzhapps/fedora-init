@@ -7,6 +7,7 @@ Installs and enables Tailscale on Fedora.
 1. **Add repository** — Registers the official Tailscale stable repo for Fedora using `dnf config-manager`.
 2. **Install package** — Installs the `tailscale` package via `dnf`.
 3. **Enable daemon** — Enables and starts `tailscaled` as a systemd service so it runs on boot.
+4. Enable SSH — Enable SSH management and connections.
 
 ## Post-install
 
