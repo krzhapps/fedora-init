@@ -41,6 +41,22 @@ Valid range: 1–36.
 ```bash
 gsettings set org.gnome.mutter dynamic-workspaces true
 
+## Disabling the Screen Saver
+
+| Schema                                | Key             | Value   |
+|---------------------------------------|-----------------|---------|
+| `org.gnome.desktop.session`           | `idle-delay`    | `0`     |
+| `org.gnome.desktop.screensaver`       | `lock-enabled`  | `false` |
+
+`idle-delay 0` prevents the screen from blanking after inactivity. `lock-enabled false` prevents the lock screen from appearing.
+
+To re-enable, restore the defaults:
+
+```bash
+gsettings set org.gnome.desktop.session idle-delay 300
+gsettings set org.gnome.desktop.screensaver lock-enabled true
+```
+
 ## Installing `xdotool` for easy window management
 
 xdotool is usefull for selecting workspaces for specific apps

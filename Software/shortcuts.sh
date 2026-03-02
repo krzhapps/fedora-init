@@ -8,16 +8,19 @@ echo "==> Configuring keyboard shortcuts..."
 # Deploy helper scripts
 mkdir -p "$HOME/.local/bin"
 install -m 755 "$SCRIPT_DIR/../Scripts/open-obsidian.sh" "$HOME/.local/bin/open-obsidian"
+install -m 755 "$SCRIPT_DIR/../Scripts/open-spotify.sh" "$HOME/.local/bin/open-spotify"
 
 # Clear conflicting system keybindings
 # Super+O defaults to rotate-video-lock-static which takes priority over custom bindings
 gsettings set org.gnome.settings-daemon.plugins.media-keys rotate-video-lock-static "['XF86RotationLockToggle']"
+# Super+M defaults to toggle-message-tray which takes priority over custom bindings
+gsettings set org.gnome.shell.keybindings toggle-message-tray "['XF86MessengerToggle']"
 
 CUSTOM_BASE="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
 
 # Register all custom keybinding slots
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
-  "['${CUSTOM_BASE}/custom0/', '${CUSTOM_BASE}/custom1/', '${CUSTOM_BASE}/custom2/']"
+  "['${CUSTOM_BASE}/custom0/', '${CUSTOM_BASE}/custom1/', '${CUSTOM_BASE}/custom2/', '${CUSTOM_BASE}/custom3/']"
 
 # SUPER+T -> Alacritty
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom0/" \
@@ -41,13 +44,14 @@ WM="org.gnome.desktop.wm.keybindings"
 # SUPER+W: close current window
 gsettings set $WM close "['<Super>w']"
 
-# Clear GNOME Shell's app-launching bindings on Super+1..4 — they conflict with
+# Clear GNOME Shell's app-launching bindings on Super+1..5 — they conflict with
 # workspace switching because org.gnome.shell.keybindings takes priority over WM bindings.
 SHELL_KBS="org.gnome.shell.keybindings"
 gsettings set $SHELL_KBS switch-to-application-1 "[]"
 gsettings set $SHELL_KBS switch-to-application-2 "[]"
 gsettings set $SHELL_KBS switch-to-application-3 "[]"
 gsettings set $SHELL_KBS switch-to-application-4 "[]"
+gsettings set $SHELL_KBS switch-to-application-5 "[]"
 
 # Clear Mutter's window-tiling bindings on Super+Left/Right — they conflict with
 # workspace navigation (toggle-tiled-left/right defaults to <Super>Left/Right).
@@ -55,11 +59,12 @@ MUTTER_KBS="org.gnome.mutter.keybindings"
 gsettings set $MUTTER_KBS toggle-tiled-left "[]"
 gsettings set $MUTTER_KBS toggle-tiled-right "[]"
 
-# SUPER+1..4: switch to workspace
+# SUPER+1..5: switch to workspace
 gsettings set $WM switch-to-workspace-1 "['<Super>1']"
 gsettings set $WM switch-to-workspace-2 "['<Super>2']"
 gsettings set $WM switch-to-workspace-3 "['<Super>3']"
 gsettings set $WM switch-to-workspace-4 "['<Super>4']"
+gsettings set $WM switch-to-workspace-5 "['<Super>5']"
 
 # SUPER+LEFT/RIGHT: navigate workspaces
 gsettings set $WM switch-to-workspace-left "['<Super>Left']"
@@ -76,5 +81,13 @@ gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${
   command "$HOME/.local/bin/open-obsidian"
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom2/" \
   binding "<Super>o"
+
+# SUPER+M(Music) -> Spotify on workspace 4
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom3/" \
+  name "Open Spotify"
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom3/" \
+  command "$HOME/.local/bin/open-spotify"
+gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom3/" \
+  binding "<Super>m"
 
 echo "==> Keyboard shortcuts configured."

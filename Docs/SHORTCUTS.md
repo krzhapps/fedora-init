@@ -11,6 +11,7 @@ Configures GNOME custom keybindings via `gsettings`.
 | SUPER + T | Open Terminal | `alacritty`     |
 | SUPER + B | Open Chrome   | `google-chrome` |
 | SUPER + O | Open Obsidian   | `xdotool set_desktop 3 & flatpak run md.obsidian.Obsidian` |
+| SUPER + M | Open Spotify    | `open-spotify`  |
 
 ### Window Manager Keybindings
 
@@ -43,7 +44,9 @@ The script registers the slots and sets all three keys using `gsettings`.
 org.gnome.desktop.wm.keybindings
 ```
 
-> **Note:** Two sets of default bindings conflict with workspace shortcuts and are cleared by the script:
+> **Note:** Several default bindings conflict with custom shortcuts and are cleared by the script:
+> - `org.gnome.settings-daemon.plugins.media-keys rotate-video-lock-static` claims `<Super>O` — reassigned to `XF86RotationLockToggle`.
+> - `org.gnome.shell.keybindings toggle-message-tray` claims `<Super>M` — reassigned to `XF86MessengerToggle`.
 > - `org.gnome.shell.keybindings switch-to-application-N` claims `<Super>1`–`<Super>9` (app launcher shortcuts) and takes priority over WM bindings — slots 1–4 are cleared.
 > - `org.gnome.mutter.keybindings toggle-tiled-left/right` claims `<Super>Left/Right` (window snapping) — both are cleared.
 
