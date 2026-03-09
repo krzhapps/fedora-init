@@ -17,6 +17,8 @@ bash "$SCRIPT_DIR/Software/docker.sh"
 bash "$SCRIPT_DIR/Software/obsidian.sh"
 bash "$SCRIPT_DIR/Software/python.sh"
 bash "$SCRIPT_DIR/Software/spotify.sh"
+bash "$SCRIPT_DIR/Software/cpp.sh"
+bash "$SCRIPT_DIR/Software/rust.sh"
 bash "$SCRIPT_DIR/Software/shortcuts.sh"
 
 echo "==> Setup complete."
