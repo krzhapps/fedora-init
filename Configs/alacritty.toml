@@ -3,7 +3,7 @@ TERM = "xterm-256color"
 
 [terminal]
 osc52 = "CopyPaste"
-# shell = { program = "/usr/bin/tmux", args = ["new-session", "-A", "-D", "-s", "main"] }
+shell = { program = "/usr/bin/tmux", args = ["new-session", "-A", "-D", "-s", "main"] }
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
