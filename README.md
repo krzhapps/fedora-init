@@ -17,6 +17,8 @@ bash ~/Setup/Software/alacritty.sh
 bash ~/Setup/Software/fedora.sh
 bash ~/Setup/Software/shortcuts.sh
 bash ~/Setup/Software/gh.sh
+bash ~/Setup/Software/rust.sh
+bash ~/Setup/Software/cpp.sh
 ```
 
 ## What gets installed
@@ -30,6 +32,8 @@ bash ~/Setup/Software/gh.sh
 | `fedora.sh` | Fedora-specific configuration | [FEDORA.md](Docs/FEDORA.md) |
 | `shortcuts.sh` | Configures system keyboard shortcuts | [SHORTCUTS.md](Docs/SHORTCUTS.md) |
 | `gh.sh` | Installs GitHub CLI | [GH.md](Docs/GH.md) |
+| `rust.sh` | Installs Rust via rustup | [RUST.md](Docs/RUST.md) |
+| `cpp.sh` | Installs C++ toolchain (cmake, clang, lld, ccache, ninja) | [CPP.md](Docs/CPP.md) |
 
 ## Structure
 
