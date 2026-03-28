@@ -2,23 +2,24 @@
 
 Fedora Linux system setup automation. Provisions a fresh machine by installing and configuring software automatically. Tested only on Fedora Workstation 43. Feel free to use a starter and modify to your desires.
 
+## Requirements
+
+- Fedora / RHEL (scripts use `dnf` and `rpm`)
+- `sudo` access (required for `tailscale.sh` and `chrome.sh`)
+
 ## Usage
 
 ```bash
 # Clone and run full setup
-git clone https://github.com/krzhalovski/Setup ~/Setup
-bash ~/Setup/init.sh
+git clone https://github.com/krzhapps/fedora-init ~/fedora-init
+cd fedora-init && bash ./init.sh
 
 # Run individual scripts
 bash ~/Setup/Software/tailscale.sh
 bash ~/Setup/Software/git.sh
-bash ~/Setup/Software/chrome.sh
-bash ~/Setup/Software/alacritty.sh
-bash ~/Setup/Software/fedora.sh
-bash ~/Setup/Software/shortcuts.sh
-bash ~/Setup/Software/gh.sh
-bash ~/Setup/Software/rust.sh
-bash ~/Setup/Software/cpp.sh
+.
+.
+.
 ```
 
 ## What gets installed
@@ -28,12 +29,21 @@ bash ~/Setup/Software/cpp.sh
 | `tailscale.sh` | Installs Tailscale VPN | [TAILSCALE.md](Docs/TAILSCALE.md) |
 | `git.sh` | Configures global Git settings | [GIT.md](Docs/GIT.md) |
 | `chrome.sh` | Installs Google Chrome | [CHROME.md](Docs/CHROME.md) |
-| `alacritty.sh` | Installs Alacritty terminal and deploys config | [ALACRITTY.md](Docs/ALACRITTY.md) |
+| `alacritty.sh` | Installs and configures Alacritty terminal | [ALACRITTY.md](Docs/ALACRITTY.md) |
+| `docker.sh` | Adds official doceker repo and installs docker | [DOCKER.md](Docs/DOCKER.md) |
+| `neovim.sh` | Installs neovim and lazyvim | [NEOVIM.md](Docs/NEOVIM.md) |
 | `fedora.sh` | Fedora-specific configuration | [FEDORA.md](Docs/FEDORA.md) |
 | `shortcuts.sh` | Configures system keyboard shortcuts | [SHORTCUTS.md](Docs/SHORTCUTS.md) |
 | `gh.sh` | Installs GitHub CLI | [GH.md](Docs/GH.md) |
 | `rust.sh` | Installs Rust via rustup | [RUST.md](Docs/RUST.md) |
 | `cpp.sh` | Installs C++ toolchain (cmake, clang, lld, ccache, ninja) | [CPP.md](Docs/CPP.md) |
+| `gcp.sh` | Installs gcp related software (gcloud, gsutil...) | [GCP.md](Docs/GCP.md) |
+| `obsidian.sh` | Installs obsidian through flatpak | [OBSIDIAN.md](Docs/OBSIDIAN.md) |
+| `spotify.sh` | Installs spotify through flatpak | [SPOTIFY.md](Docs/SPOTIFY.md) |
+| `terraform.sh` | Installs terraform | [TERRAFORM.md](Docs/TERRAFORM.md) |
+
+## Shortucts
+The shortcuts are in part inspired by [Omarchy](https://github.com/basecamp/omarchy). For a more detailed run through of the custom shortcuts you can read the [SHORTCUTS.md](Docs/SHORTCUTS.md)
 
 ## Structure
 
@@ -46,10 +56,6 @@ Setup/
 └── Docs/            # One doc per script
 ```
 
-## Requirements
-
-- Fedora / RHEL (scripts use `dnf` and `rpm`)
-- `sudo` access (required for `tailscale.sh` and `chrome.sh`)
 
 ## Extending
 
