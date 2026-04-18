@@ -74,6 +74,10 @@ gsettings set $WM switch-to-workspace-right "['<Super>Right']"
 gsettings set $WM move-to-workspace-left "['<Super><Shift>Left']"
 gsettings set $WM move-to-workspace-right "['<Super><Shift>Right']"
 
+# SUPER+SHIFT+PAGE_UP/DOWN: move window to adjacent monitor
+gsettings set $WM move-to-monitor-left "['<Super><Shift>Page_Up']"
+gsettings set $WM move-to-monitor-right "['<Super><Shift>Page_Down']"
+
 # SUPER+O -> Obsidian on workspace 3
 gsettings set "org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:${CUSTOM_BASE}/custom2/" \
   name "Open Obsidian"

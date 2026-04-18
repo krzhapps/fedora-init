@@ -24,8 +24,10 @@ Configures GNOME custom keybindings via `gsettings`.
 | SUPER + 4              | Switch to workspace 4             |
 | SUPER + LEFT           | Move to left workspace            |
 | SUPER + RIGHT          | Move to right workspace           |
-| SUPER + SHIFT + LEFT   | Move current window to left workspace  |
-| SUPER + SHIFT + RIGHT  | Move current window to right workspace |
+| SUPER + SHIFT + LEFT      | Move current window to left workspace   |
+| SUPER + SHIFT + RIGHT     | Move current window to right workspace  |
+| SUPER + SHIFT + PAGE UP   | Move current window to left monitor     |
+| SUPER + SHIFT + PAGE DOWN | Move current window to right monitor    |
 
 ## How It Works
 
