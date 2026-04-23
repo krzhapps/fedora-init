@@ -9,4 +9,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Install Obsidian from Flathub
 flatpak install -y flathub md.obsidian.Obsidian
 
+# Make sure Obsidian can communicate outside of its sandbox (needed for personal custom plugins)
+flatpak override --user --talk-name=org.freedesktop.Flatpak md.obsidian.Obsidian
+
 echo "==> Obsidian installed. Launch via 'flatpak run md.obsidian.Obsidian' or from the application menu."
