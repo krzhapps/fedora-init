@@ -22,6 +22,7 @@ bash "$SCRIPT_DIR/Software/cpp.sh"
 bash "$SCRIPT_DIR/Software/rust.sh"
 bash "$SCRIPT_DIR/Software/gcp.sh"
 bash "$SCRIPT_DIR/Software/ai.sh"
+bash "$SCRIPT_DIR/Software/go.sh"
 bash "$SCRIPT_DIR/Software/shortcuts.sh"
 
 echo "==> Setup complete."
