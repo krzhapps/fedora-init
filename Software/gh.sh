@@ -10,4 +10,7 @@ sudo dnf config-manager addrepo \
 
 sudo dnf install -y gh
 
+echo "==> Installing gh-stack extension..."
+gh extension install github/gh-stack
+
 echo "==> GitHub CLI installed. Run 'gh auth login' to authenticate."
